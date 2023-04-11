@@ -36,7 +36,7 @@ class MainActivity : AppCompatActivity() {
             .translationY(windowManager?.currentWindowMetrics?.bounds?.height()?.toFloat()
                 ?: 1000f)
             .alpha(0f)
-            .setDuration(200)
+            .setDuration(1000)
             .setListener(object : AnimatorListenerAdapter() {
                 override fun onAnimationEnd(animation: Animator) {
                     view.visibility = View.GONE
@@ -53,7 +53,7 @@ class MainActivity : AppCompatActivity() {
         view.animate()
             .translationY(0f)
             .alpha(1f)
-            .setDuration(200)
+            .setDuration(1000)
             .setListener(null)
 
     }
